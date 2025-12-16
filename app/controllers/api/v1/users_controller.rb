@@ -36,8 +36,9 @@ module Api
 
       
       def destroy_me
+        render json: { message: 'Usuário deletado com sucesso' }, status: :ok
         @current_user.destroy
-        head :no_content
+        
       end
 
 

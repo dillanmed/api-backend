@@ -9,7 +9,7 @@ module Api
 
         if user&.authenticate(params[:password])
           token = jwt_encode(user_id: user.id)
-          render json: { token: token, user: user }
+          render json: { token: token}, status: :ok
         else
           render json: { error: 'Acesso negado' }, status: :unauthorized
         end
