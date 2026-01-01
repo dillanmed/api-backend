@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem 'jwt'
 
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.21'
 
 gem "rack-cors"
 
